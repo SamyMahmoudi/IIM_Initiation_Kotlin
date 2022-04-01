@@ -53,6 +53,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         )
 
         mMap.moveCamera(CameraUpdateFactory.newLatLng(locationCoordinates))
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(locationCoordinates, 15f))
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(locationCoordinates, 7f))
     }
 }
