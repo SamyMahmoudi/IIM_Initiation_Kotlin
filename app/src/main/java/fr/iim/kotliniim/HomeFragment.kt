@@ -36,7 +36,7 @@ class HomeFragment : Fragment() {
             if(varLoginMail.matches(Regex("^[a-zA-Z0-9.!#\$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*\$"))) {
                 view.findViewById<TextView>(R.id.textErrEmail).text = ""
 
-                if (varLoginPassword.matches(Regex("^(?=.*[0-9])(?=.*[A-Z])(?=.*[@#\$%^&+=!])(?=\\S+\$).{4,}\$"))) {
+                if (varLoginPassword.matches(Regex("^(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z])(?=.*[@#\$%^&+=!])(?=\\S+\$).{4,}\$"))) {
                     view.findViewById<TextView>(R.id.textErrPassword).text = ""
 
                     if(varLoginCheckbox.isChecked) {
